@@ -7,6 +7,8 @@ when runned become Docker containers suitable for hosting many application.
 Docker is an open source containerisation platform for building and containerising applications. Docker Engine acts 
 as a client-server application with:
 
-* A server with a long-running daemon process dockerd.
+* A server with a long-running daemon process docker.
 * APIs which specify interfaces that programs can use to talk to and instruct the Docker daemon.
 * A command line interface (CLI) client
+
+![Docker Architecture And Components](https://vmarena.com/wp-content/uploads/2018/08/DOCK02.png)
