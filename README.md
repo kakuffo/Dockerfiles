@@ -49,7 +49,7 @@ as a client-server application with:
 | Sandbox|Docker sandbox allows you to configure and try trust operations locally without impacting your production images.|[Docker SandBox](https://docs.docker.com/engine/security/trust/trust_sandbox/)|
 | Endpoint(API)|The Engine API uses standard HTTP status codes to indicate the success or failure of the API call.|[Docker API](https://docs.docker.com/engine/api/v1.24/)|
 | Network Driver|Docker containers and services are so powerful is that you can connect them together, or connect them to non-Docker workloads. Docker containers and services do not even need to be aware that they are deployed on Docker, or whether their peers are also Docker workloads or not.|[Docker Network](https://docs.docker.com/network/)|
-| Host|
+| Host|Docker host (the container shares the host’s networking namespace), and the container does not get its own IP-address allocated. For instance, if you run a container which binds to port 80 and you use host networking, the container’s application is available on port 80 on the host’s IP address.|[Docker Host](https://docs.docker.com/network/host/)|
 | Bridge|
 | Overlay|
 | macvian|
