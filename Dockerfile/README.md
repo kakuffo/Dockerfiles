@@ -56,7 +56,7 @@ Normal shell processing does not occur when using the exec form. For example, RU
 Reference - Best Practices
 
 |Name, shorthand|Default	Description |
-|----------------:|:------------------------------------------------------------:|
+|:----------------|:------------------------------------------------------------:|
 |--add-host		|Add a custom host-to-IP mapping (host:ip)
 |--attach , -a		|Attach to STDIN, STDOUT or STDERR
 |--blkio-weight		|Block IO (relative weight), between 10 and 1000, or 0 to disable (default 0)
