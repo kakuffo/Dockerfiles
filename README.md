@@ -51,7 +51,7 @@ as a client-server application with:
 | Network Driver|Docker containers and services are so powerful is that you can connect them together, or connect them to non-Docker workloads. Docker containers and services do not even need to be aware that they are deployed on Docker, or whether their peers are also Docker workloads or not.|[Docker Network](https://docs.docker.com/network/)|
 | Host|Docker host (the container shares the host’s networking namespace), and the container does not get its own IP-address allocated. For instance, if you run a container which binds to port 80 and you use host networking, the container’s application is available on port 80 on the host’s IP address.|[Docker Host](https://docs.docker.com/network/host/)|
 | Bridge|Docker Use the default bridge network demonstrates how to use the default bridge network that Docker sets up for you automatically. This network is not the best choice for production systems.|[Docker Dridge](https://docs.docker.com/network/network-tutorial-standalone/)|
-| Overlay|
+| Overlay|Docker overlay network driver creates a distributed network among multiple Docker daemon hosts. This network sits on top of (overlays) the host-specific networks, allowing containers connected to it (including swarm service containers) to communicate securely when encryption is enabled.|[Docker Overlay](https://docs.docker.com/network/overlay/)|
 | macvian|
 | IPAM Drive| 
 | Docker REST API|
