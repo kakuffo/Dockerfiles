@@ -7,7 +7,7 @@ The following is an overview of the use of Docker files, and the commands availa
 Docker is an open source containerisation platform for building and containerising applications. Docker Engine acts 
 as a client-server application with:
 
-* Docker Engine - is the lightweight and powerful open source containerization technology combined with a work flow for building and containerizing your applications.)
+* Docker Engine
     * Docker Server 
         * Docker Persistence Storage
         * Docker Container
