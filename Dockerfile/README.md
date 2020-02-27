@@ -5,22 +5,33 @@ This document will leverage the official [ockerfile reference](https://docs.dock
 and illustrate the technique for employing, and using these commands.  This part of my work will create a collection
 of DockerFiles for creating a Docker container of the many applications.  These will be used to illustrate my mastery
 of DockerFiles !!
-
+In a typical tech project a DockerFile is used by all in the development process to 
 ## DockerFile Best Practice
 
 DockerFile best practice demands that each instruction creates one layer, and the start of each instruction starts with a reserved work
 :
+```Shell
+FROM node:10.15.0-alpine AS build
 
-FROM creates a layer from the ubuntu:18.04 Docker image.
-COPY adds files from your Docker client’s current directory.
-RUN builds your application with make.
-CMD specifies what command to run within the container.
+RUN apk add git nodejs
+RUN rm -rf /var/cache/apk/*
+WORKDIR /usr/src/app
+ARG application_name
+COPY ./$application_name .
+RUN npm install
+RUN npm rebuild node-sass
+RUN npm run build-dev
 
+FROM nginx
 
-FROM must be the first non-comment instruction in the Dockerfile.
-FROM can appear multiple times within a single Dockerfile in order to create multiple images. Simply make a note of the last image ID output by the commit before each new FROM command.
-The tag or digest values are optional. If you omit either of them, the builder assumes a latest by default. The builder returns an error if it cannot match the tag value.
-Reference - Best Practices
+ARG application_port
+EXPOSE $application_port/tcp
+
+COPY --from=build /usr/src/app/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /usr/src/app/www /usr/share/nginx/html/admin
+
+ENTRYPOINT nginx -g 'daemon off;'
+```
 
 MAINTAINER
 Usage:
