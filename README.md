@@ -72,7 +72,8 @@ Docker Host
 Docker Objects
 Docker’s Registry 
 
-# How to 
+# How to docker01.png
+
 
 ![Docker Components](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/Picture1-15.png)
 
