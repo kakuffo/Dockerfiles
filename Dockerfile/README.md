@@ -7,7 +7,7 @@ of DockerFiles for creating a Docker container of the many applications.  These 
 of DockerFiles !!
 In a typical tech project a DockerFile is used by all in the development process to 
 ## DockerFile Best Practice
-[![IMAGE ALT TEXT HERE](https://github.com/kakuffo/Dockerfiles/blob/master/vid/Screen%20Recording%202020-02-27%20at%2017.36.41.mov)
+[![IMAGE ALT TEXT HERE](https://github.com/kakuffo/Dockerfiles/blob/master/vid/Recording.jpeg)
 DockerFile best practice demands that each instruction creates one layer, and the start of each instruction starts with a reserved work
 :
 ```Shell
