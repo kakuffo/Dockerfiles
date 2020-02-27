@@ -82,7 +82,7 @@ describes the adoption of programmable software development, automation and infr
 The term also labels a culture that oversees the entire software delivery chain and shared services and promotes the 
 adoption of new development tools and best practices.
 
-# BizDevOps DevOps 2.0 AKA 
+# BizDevOps AKA DevOps 2.0
 
 ![Docker Components](https://github.com/kakuffo/Dockerfiles/blob/master/vid/docker01.png?raw=true)
 
