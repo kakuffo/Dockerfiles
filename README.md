@@ -36,7 +36,7 @@ as a client-server application with:
 | Docker Server         |                       |                       |
 | Docker Persistence Storage|                   |                       |
 | Docker Container |
-| runC|
+| runC|runC, a lightweight universal container runtime, is a command-line tool for spawning and running containers according to the Open Container Initiative (OCI) specification.  This page gathers resources about managing containers in runC.|   |
 | Namespace|
 | Cgroups|
 | Filesystem access|
