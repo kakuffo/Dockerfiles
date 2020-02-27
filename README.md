@@ -34,7 +34,7 @@ as a client-server application with:
 |-----------------------|:---------------------:|:----------------------:
 | Docker Engine         | Docker Engine is an open source containerization technology for building and containerizing your applications| [Docker Engine Documentation](https://docs.docker.com/install/linux/docker-ce/ubuntu/)                      |                       |
 | Docker Server (daemon)         | The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.| [Docker daemon documentation]()                      |
-| Docker Persistence Storage|                   |                       |
+| Docker Storage|Docker separates storage use cases within the Docker Enterprise Platform into three categories |[Docker Storage](https://success.docker.com/article/an-introduction-to-storage-solutions-for-docker-enterprise)                      |
 | Docker Container |
 | runC|runC, a lightweight universal container runtime, is a command-line tool for spawning and running containers according to the Open Container Initiative (OCI) specification.  This page gathers resources about managing containers in runC.|   |
 | Namespace|
