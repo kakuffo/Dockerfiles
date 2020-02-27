@@ -53,9 +53,9 @@ as a client-server application with:
 | Bridge|Docker Use the default bridge network demonstrates how to use the default bridge network that Docker sets up for you automatically. This network is not the best choice for production systems.|[Docker Dridge](https://docs.docker.com/network/network-tutorial-standalone/)|
 | Overlay|Docker overlay network driver creates a distributed network among multiple Docker daemon hosts. This network sits on top of (overlays) the host-specific networks, allowing containers connected to it (including swarm service containers) to communicate securely when encryption is enabled.|[Docker Overlay](https://docs.docker.com/network/overlay/)|
 | macvlan|Some applications, especially legacy applications or applications which monitor network traffic, expect to be directly connected to the physical network.|[Docker macvlan](https://docs.docker.com/network/macvlan/)|
-| IPAM Drive| 
-| Docker REST API|
-| Docker CLI|
+| IPAM Drive|Docker DRIVER accepts bridge or overlay which are the built-in network drivers.|[Docker DRIVER](https://docs.docker.com/engine/reference/commandline/network_create/)| 
+| Docker REST API|Docker provides an API for interacting with the Docker daemon (called the Docker Engine API), as well as SDKs for Go and Python.|[Docker Engine API](https://docs.docker.com/engine/api/)|
+| Docker CLI|Depending on your Docker system configuration, you may be required to preface each docker command with sudo. |[Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/)|
         
 * A server with a long-running daemon process docker.
 * APIs which specify interfaces that programs can use to talk to and instruct the Docker daemon.
