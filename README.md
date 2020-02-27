@@ -31,6 +31,7 @@ as a client-server application with:
     * Docker CLI
  
 |Docker Component       |What it does           | Documentation Link    | 
+|-----------------------|:---------------------:|:----------------------:
 | Docker Engine         |                       |                       |
 | Docker Server         |                       |                       |
 | Docker Persistence Storage|                   |                       |
