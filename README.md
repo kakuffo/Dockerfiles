@@ -48,7 +48,7 @@ as a client-server application with:
 | Docker Network|The client and daemon API must both be at least 1.21 to use this command. Use the docker version command on the client to check your client and daemon API versions.|[Docker Network](https://docs.docker.com/engine/reference/commandline/network_create/)|
 | Sandbox|Docker sandbox allows you to configure and try trust operations locally without impacting your production images.|[Docker SandBox](https://docs.docker.com/engine/security/trust/trust_sandbox/)|
 | Endpoint(API)|The Engine API uses standard HTTP status codes to indicate the success or failure of the API call.|[Docker API](https://docs.docker.com/engine/api/v1.24/)|
-| Network Driver|
+| Network Driver|Docker containers and services are so powerful is that you can connect them together, or connect them to non-Docker workloads. Docker containers and services do not even need to be aware that they are deployed on Docker, or whether their peers are also Docker workloads or not.|[Docker Network](https://docs.docker.com/network/)|
 | Host|
 | Bridge|
 | Overlay|
