@@ -42,8 +42,8 @@ as a client-server application with:
 | Namespace|Docker uses a technology called namespaces to provide the isolated workspace called the container. When you run a container, Docker creates a set of namespaces for that container.|[Docker Namespaces](https://docs.docker.com/engine/docker-overview/) |
 | Cgroups|A cgroup limits an application to a specific set of resources. Control groups allow Docker Engine to share available hardware resources to containers and optionally enforce limits and constraints.|[Docker Cgroups](https://docs.docker.com/engine/docker-overview/)|
 | Filesystem|Volumes are stored in a part of the host filesystem which is managed by Docker (/var/lib/docker/volumes/ on Linux). Non-Docker processes should not modify this part of the filesystem. Volumes are the best way to persist data in Docker.|[Docker Filesystem](https://docs.docker.com/storage/)|
-| Linux Security|
-| Snapshotter|
+| Linux Security|Docker containers are very similar to LXC containers, and they have similar security features. When you start a container with docker run, behind the scenes Docker creates a set of namespaces and control groups for the container.|[Linux Security](https://docs.docker.com/engine/security/security/)
+| Snapshot|Docker’s btrfs storage driver leverages many Btrfs features for image and container management. Among these features are block-level operations, thin provisioning, copy-on-write snapshots, and ease of administration. You can easily combine multiple physical block devices into a single Btrfs filesystem.|[BTRFS Snapshot](https://docs.docker.com/storage/storagedriver/btrfs-driver/)|
 | Storage Drive|
 | Docker Network|
 | Sandbox|
