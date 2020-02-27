@@ -64,7 +64,9 @@ Reference - Best Practices
 ## LABEL
 ### Usage:
 
+```Shell
 LABEL <key>=<value> [<key>=<value> ...]
+```
 Information:
 
 The LABEL instruction adds metadata to an image.
@@ -77,7 +79,9 @@ Reference - Best Practices
 ## EXPOSE
 ### Usage:
 
+```Shell
 EXPOSE <port> [<port> ...]
+```
 Information:
 
 Informs Docker that the container listens on the specified network port(s) at runtime.
@@ -87,8 +91,10 @@ Reference - Best Practices
 ## ENV
 ### Usage:
 
+```Shell
 ENV <key> <value>
 ENV <key>=<value> [<key>=<value> ...]
+```
 Information:
 
 The ENV instruction sets the environment variable <key> to the value <value>.
@@ -100,8 +106,10 @@ Reference - Best Practices
 ## ADD
 ### Usage:
 
+```Shell
 ADD <src> [<src> ...] <dest>
 ADD ["<src>", ... "<dest>"] (this form is required for paths containing whitespace)
+```
 Information:
 
 Copies new files, directories, or remote file URLs from <src> and adds them to the filesystem of the image at the path <dest>.
@@ -114,8 +122,10 @@ Reference - Best Practices
 ## COPY
 ### Usage:
 
+```Shell
 COPY <src> [<src> ...] <dest>
 COPY ["<src>", ... "<dest>"] (this form is required for paths containing whitespace)
+```
 Information:
 
 Copies new files or directories from <src> and adds them to the filesystem of the image at the path <dest>.
@@ -127,9 +137,10 @@ Reference - Best Practices
 
 ## ENTRYPOINT
 ### Usage:
-
+```Shell
 ENTRYPOINT ["<executable>", "<param1>", "<param2>"] (exec form, preferred)
 ENTRYPOINT <command> <param1> <param2> (shell form)
+```
 Information:
 
 Allows you to configure a container that will run as an executable.
@@ -140,17 +151,19 @@ Reference - Best Practices
 
 ## VOLUME
 ### Usage:
-
+```Shell
 VOLUME ["<path>", ...]
 VOLUME <path> [<path> ...]
+```
 Creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers.
 
 Reference - Best Practices
 
 ## USER
 ### Usage:
-
+```Shell
 USER <username | UID>
+```
 The USER instruction sets the user name or UID to use when running the image and for any RUN, CMD and ENTRYPOINT instructions that follow it in the Dockerfile.
 
 Reference - Best Practices
@@ -158,7 +171,9 @@ Reference - Best Practices
 ## WORKDIR
 ### Usage:
 
+```Shell
 WORKDIR </path/to/workdir>
+```
 Information:
 
 Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it.
@@ -168,7 +183,9 @@ Reference - Best Practices
 ## ARG
 ### Usage:
 
+```Shell
 ARG <name>[=<default value>]
+```
 Information:
 
 Defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg <varname>=<value> flag.
@@ -182,10 +199,13 @@ FTP_PROXY and ftp_proxy
 NO_PROXY and no_proxy
 Reference
 
-ONBUILD
-Usage:
+## ONBUILD
+###  Usage:
 
+```Shell
 ONBUILD <Dockerfile INSTRUCTION>
+```
+
 Information:
 
 Adds to the image a trigger instruction to be executed at a later time, when the image is used as the base for another build. The trigger will be executed in the context of the downstream build, as if it had been inserted immediately after the FROM instruction in the downstream Dockerfile.
@@ -194,19 +214,23 @@ Triggers are inherited by the "child" build only. In other words, they are not i
 The ONBUILD instruction may not trigger FROM, MAINTAINER, or ONBUILD instructions.
 Reference - Best Practices
 
-STOPSIGNAL
-Usage:
+## STOPSIGNAL
+### Usage:
 
+```Shell
 STOPSIGNAL <signal>
+```
+
 The STOPSIGNAL instruction sets the system call signal that will be sent to the container to exit. This signal can be a valid unsigned number that matches a position in the kernel’s syscall table, for instance 9, or a signal name in the format SIGNAME, for instance SIGKILL.
 
 Reference
 
-HEALTHCHECK
-Usage:
-
+## HEALTHCHECK
+### Usage:
+```Shell
 HEALTHCHECK [<options>] CMD <command> (check container health by running a command inside the container)
 HEALTHCHECK NONE (disable any healthcheck inherited from the base image)
+```
 Information:
 
 Tells Docker how to test a container to check that it is still working
@@ -226,10 +250,12 @@ The first 4096 bytes of stdout and stderr from the <command> are stored and can 
 When the health status of a container changes, a health_status event is generated with the new status.
 Reference
 
-SHELL
-Usage:
+## SHELL
+### Usage:
 
+```Shell
 SHELL ["<executable>", "<param1>", "<param2>"]
+```
 Information:
 
 Allows the default shell used for the shell form of commands to be overridden.
