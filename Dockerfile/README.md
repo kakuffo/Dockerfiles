@@ -61,8 +61,8 @@ If the user specifies arguments to docker run then they will override the defaul
 Normal shell processing does not occur when using the exec form. For example, CMD ["echo", "$HOME"] will not do variable substitution on $HOME.
 Reference - Best Practices
 
-LABEL
-Usage:
+## LABEL
+### Usage:
 
 LABEL <key>=<value> [<key>=<value> ...]
 Information:
@@ -74,8 +74,8 @@ If Docker encounters a label/key that already exists, the new value overrides an
 To view an image’s labels, use the docker inspect command. They will be under the "Labels" JSON attribute.
 Reference - Best Practices
 
-EXPOSE
-Usage:
+## EXPOSE
+### Usage:
 
 EXPOSE <port> [<port> ...]
 Information:
@@ -84,8 +84,8 @@ Informs Docker that the container listens on the specified network port(s) at ru
 EXPOSE does not make the ports of the container accessible to the host.
 Reference - Best Practices
 
-ENV
-Usage:
+## ENV
+### Usage:
 
 ENV <key> <value>
 ENV <key>=<value> [<key>=<value> ...]
@@ -97,8 +97,8 @@ The environment variables set using ENV will persist when a container is run fro
 The first form will set a single variable to a value with the entire string after the first space being treated as the <value> - including characters such as spaces and quotes.
 Reference - Best Practices
 
-ADD
-Usage:
+## ADD
+### Usage:
 
 ADD <src> [<src> ...] <dest>
 ADD ["<src>", ... "<dest>"] (this form is required for paths containing whitespace)
@@ -111,8 +111,8 @@ If <src> is a file or directory, then they must be relative to the source direct
 If <dest> doesn’t exist, it is created along with all missing directories in its path.
 Reference - Best Practices
 
-COPY
-Usage:
+## COPY
+### Usage:
 
 COPY <src> [<src> ...] <dest>
 COPY ["<src>", ... "<dest>"] (this form is required for paths containing whitespace)
@@ -125,8 +125,8 @@ Copies new files or directories from <src> and adds them to the filesystem of th
 If <dest> doesn’t exist, it is created along with all missing directories in its path.
 Reference - Best Practices
 
-ENTRYPOINT
-Usage:
+## ENTRYPOINT
+### Usage:
 
 ENTRYPOINT ["<executable>", "<param1>", "<param2>"] (exec form, preferred)
 ENTRYPOINT <command> <param1> <param2> (shell form)
@@ -138,8 +138,8 @@ The shell form prevents any CMD or run command line arguments from being used, b
 Only the last ENTRYPOINT instruction in the Dockerfile will have an effect.
 Reference - Best Practices
 
-VOLUME
-Usage:
+## VOLUME
+### Usage:
 
 VOLUME ["<path>", ...]
 VOLUME <path> [<path> ...]
@@ -147,16 +147,16 @@ Creates a mount point with the specified name and marks it as holding externally
 
 Reference - Best Practices
 
-USER
-Usage:
+## USER
+### Usage:
 
 USER <username | UID>
 The USER instruction sets the user name or UID to use when running the image and for any RUN, CMD and ENTRYPOINT instructions that follow it in the Dockerfile.
 
 Reference - Best Practices
 
-WORKDIR
-Usage:
+## WORKDIR
+### Usage:
 
 WORKDIR </path/to/workdir>
 Information:
@@ -165,8 +165,8 @@ Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructi
 It can be used multiple times in the one Dockerfile. If a relative path is provided, it will be relative to the path of the previous WORKDIR instruction.
 Reference - Best Practices
 
-ARG
-Usage:
+## ARG
+### Usage:
 
 ARG <name>[=<default value>]
 Information:
