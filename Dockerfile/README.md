@@ -44,12 +44,14 @@ The default shell for the shell form can be changed using the SHELL command.
 Normal shell processing does not occur when using the exec form. For example, RUN ["echo", "$HOME"] will not do variable substitution on $HOME.
 Reference - Best Practices
 
-CMD
-Usage:
+## CMD
+### Usage:
 
+```Shell
 CMD ["<executable>","<param1>","<param2>"] (exec form, this is the preferred form)
 CMD ["<param1>","<param2>"] (as default parameters to ENTRYPOINT)
 CMD <command> <param1> <param2> (shell form)
+```
 Information:
 
 The main purpose of a CMD is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.
