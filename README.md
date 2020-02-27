@@ -75,7 +75,7 @@ Docker’s Registry
 # How to docker01.png
 
 
-![Docker Components](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/Picture1-15.png)
+![Docker Components](ttps://github.com/kakuffo/Dockerfiles/blob/master/vid/docker01.png)
 
 
 have a docker folder which holds each applications and their configuration. Here's an example project folder hierarchy for a web application that has a database.
