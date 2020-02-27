@@ -259,7 +259,7 @@ Reference
 SHELL ["<executable>", "<param1>", "<param2>"]
 ```
 
-####Information:
+#### Information:
 
 Allows the default shell used for the shell form of commands to be overridden.
 Each SHELL instruction overrides all previous SHELL instructions, and affects all subsequent instructions.
