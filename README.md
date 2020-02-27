@@ -18,7 +18,7 @@ as a client-server application with:
                 * Cgroups
                 * Filesystem
                 * Linux Security
-            * Snapshotter
+            * Snapshot
                 * Storage Drive
         * Docker Network
             * Sandbox
