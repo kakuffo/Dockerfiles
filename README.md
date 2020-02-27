@@ -52,7 +52,7 @@ as a client-server application with:
 | Host|Docker host (the container shares the host’s networking namespace), and the container does not get its own IP-address allocated. For instance, if you run a container which binds to port 80 and you use host networking, the container’s application is available on port 80 on the host’s IP address.|[Docker Host](https://docs.docker.com/network/host/)|
 | Bridge|Docker Use the default bridge network demonstrates how to use the default bridge network that Docker sets up for you automatically. This network is not the best choice for production systems.|[Docker Dridge](https://docs.docker.com/network/network-tutorial-standalone/)|
 | Overlay|Docker overlay network driver creates a distributed network among multiple Docker daemon hosts. This network sits on top of (overlays) the host-specific networks, allowing containers connected to it (including swarm service containers) to communicate securely when encryption is enabled.|[Docker Overlay](https://docs.docker.com/network/overlay/)|
-| macvian|
+| macvlan|Some applications, especially legacy applications or applications which monitor network traffic, expect to be directly connected to the physical network.|[Docker macvlan](https://docs.docker.com/network/macvlan/)|
 | IPAM Drive| 
 | Docker REST API|
 | Docker CLI|
