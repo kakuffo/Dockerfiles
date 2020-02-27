@@ -16,7 +16,7 @@ as a client-server application with:
             * runC
                 * Namespace
                 * Cgroups
-                * Filesystem access
+                * Filesystem
                 * Linux Security
             * Snapshotter
                 * Storage Drive
@@ -41,7 +41,7 @@ as a client-server application with:
 | runC|runC, a lightweight universal container runtime, is a command-line tool for spawning and running containers according to the Open Container Initiative (OCI) specification.  This page gathers resources about managing containers in runC.| [Docker RunC](https://docs.docker.com/engine/reference/run/)  |
 | Namespace|Docker uses a technology called namespaces to provide the isolated workspace called the container. When you run a container, Docker creates a set of namespaces for that container.|[Docker Namespaces](https://docs.docker.com/engine/docker-overview/) |
 | Cgroups|A cgroup limits an application to a specific set of resources. Control groups allow Docker Engine to share available hardware resources to containers and optionally enforce limits and constraints.|[Docker Cgroups](https://docs.docker.com/engine/docker-overview/)|
-| Filesystem access|
+| Filesystem|Volumes are stored in a part of the host filesystem which is managed by Docker (/var/lib/docker/volumes/ on Linux). Non-Docker processes should not modify this part of the filesystem. Volumes are the best way to persist data in Docker.|[Docker Filesystem](https://docs.docker.com/storage/)|
 | Linux Security|
 | Snapshotter|
 | Storage Drive|
