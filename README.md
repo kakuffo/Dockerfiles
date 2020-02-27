@@ -6,7 +6,7 @@ and illustrate the technique for employing, and using these commands.
 
 # What is Docker
 Docker is an open source containerisation platform for building and containerising applications. Docker Engine acts 
-as a client-server application with serveral components, which together forms the Docker platform.  I have taken time
+as a client-server application with several components, which together forms the Docker platform.  I have taken time
 list these components, and given the official documentation to each.:
 
 * Docker Engine
