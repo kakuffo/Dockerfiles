@@ -32,7 +32,7 @@ as a client-server application with:
  
 |Docker Component       |What it does           | Documentation Link    | 
 |-----------------------|:---------------------:|:----------------------:
-| Docker Engine         | Docker Engine is an open source containerization technology for building and containerizing your applications| [Docker Engine Documentation] (https://docs.docker.com/install/linux/docker-ce/ubuntu/)                      |                       |
+| Docker Engine         | Docker Engine is an open source containerization technology for building and containerizing your applications| [Docker Engine Documentation](https://docs.docker.com/install/linux/docker-ce/ubuntu/)                      |                       |
 | Docker Server         |                       |                       |
 | Docker Persistence Storage|                   |                       |
 | Docker Container |
