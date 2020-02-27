@@ -37,7 +37,7 @@ RUN <command> (shell form, the command is run in a shell, which by default is /b
 ```Shell
 RUN ["<executable>", "<param1>", "<param2>"] (exec form)
 ```
-Information:
+#### Information:
 
 The exec form makes it possible to avoid shell string munging, and to RUN commands using a base image that does not contain the specified shell executable.
 The default shell for the shell form can be changed using the SHELL command.
@@ -52,7 +52,7 @@ CMD ["<executable>","<param1>","<param2>"] (exec form, this is the preferred for
 CMD ["<param1>","<param2>"] (as default parameters to ENTRYPOINT)
 CMD <command> <param1> <param2> (shell form)
 ```
-Information:
+#### Information:
 
 The main purpose of a CMD is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.
 There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
@@ -67,7 +67,7 @@ Reference - Best Practices
 ```Shell
 LABEL <key>=<value> [<key>=<value> ...]
 ```
-Information:
+#### Information:
 
 The LABEL instruction adds metadata to an image.
 To include spaces within a LABEL value, use quotes and backslashes as you would in command-line parsing.
@@ -82,7 +82,7 @@ Reference - Best Practices
 ```Shell
 EXPOSE <port> [<port> ...]
 ```
-Information:
+#### Information:
 
 Informs Docker that the container listens on the specified network port(s) at runtime.
 EXPOSE does not make the ports of the container accessible to the host.
@@ -95,7 +95,7 @@ Reference - Best Practices
 ENV <key> <value>
 ENV <key>=<value> [<key>=<value> ...]
 ```
-Information:
+#### Information:
 
 The ENV instruction sets the environment variable <key> to the value <value>.
 The value will be in the environment of all “descendant” Dockerfile commands and can be replaced inline as well.
@@ -110,7 +110,7 @@ Reference - Best Practices
 ADD <src> [<src> ...] <dest>
 ADD ["<src>", ... "<dest>"] (this form is required for paths containing whitespace)
 ```
-Information:
+#### Information:
 
 Copies new files, directories, or remote file URLs from <src> and adds them to the filesystem of the image at the path <dest>.
 <src> may contain wildcards and matching will be done using Go’s filepath.Match rules.
@@ -126,7 +126,7 @@ Reference - Best Practices
 COPY <src> [<src> ...] <dest>
 COPY ["<src>", ... "<dest>"] (this form is required for paths containing whitespace)
 ```
-Information:
+#### Information:
 
 Copies new files or directories from <src> and adds them to the filesystem of the image at the path <dest>.
 <src> may contain wildcards and matching will be done using Go’s filepath.Match rules.
@@ -141,7 +141,7 @@ Reference - Best Practices
 ENTRYPOINT ["<executable>", "<param1>", "<param2>"] (exec form, preferred)
 ENTRYPOINT <command> <param1> <param2> (shell form)
 ```
-Information:
+#### Information:
 
 Allows you to configure a container that will run as an executable.
 Command line arguments to docker run <image> will be appended after all elements in an exec form ENTRYPOINT and will override all elements specified using CMD.
@@ -174,7 +174,7 @@ Reference - Best Practices
 ```Shell
 WORKDIR </path/to/workdir>
 ```
-Information:
+#### Information:
 
 Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it.
 It can be used multiple times in the one Dockerfile. If a relative path is provided, it will be relative to the path of the previous WORKDIR instruction.
@@ -186,7 +186,7 @@ Reference - Best Practices
 ```Shell
 ARG <name>[=<default value>]
 ```
-Information:
+#### Information:
 
 Defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg <varname>=<value> flag.
 Multiple variables may be defined by specifying ARG multiple times.
@@ -206,7 +206,7 @@ Reference
 ONBUILD <Dockerfile INSTRUCTION>
 ```
 
-Information:
+#### Information:
 
 Adds to the image a trigger instruction to be executed at a later time, when the image is used as the base for another build. The trigger will be executed in the context of the downstream build, as if it had been inserted immediately after the FROM instruction in the downstream Dockerfile.
 Any build instruction can be registered as a trigger.
@@ -231,14 +231,16 @@ Reference
 HEALTHCHECK [<options>] CMD <command> (check container health by running a command inside the container)
 HEALTHCHECK NONE (disable any healthcheck inherited from the base image)
 ```
-Information:
+#### Information:
 
 Tells Docker how to test a container to check that it is still working
 Whenever a health check passes, it becomes healthy. After a certain number of consecutive failures, it becomes unhealthy.
 The <options> that can appear are...
+```DOS
 --interval=<duration> (default: 30s)
 --timeout=<duration> (default: 30s)
 --retries=<number> (default: 3)
+```
 The health check will first run interval seconds after the container is started, and then again interval seconds after each previous check completes. If a single run of the check takes longer than timeout seconds then the check is considered to have failed. It takes retries consecutive failures of the health check for the container to be considered unhealthy.
 There can only be one HEALTHCHECK instruction in a Dockerfile. If you list more than one then only the last HEALTHCHECK will take effect.
 <command> can be either a shell command or an exec JSON array.
@@ -256,7 +258,8 @@ Reference
 ```Shell
 SHELL ["<executable>", "<param1>", "<param2>"]
 ```
-Information:
+
+####Information:
 
 Allows the default shell used for the shell form of commands to be overridden.
 Each SHELL instruction overrides all previous SHELL instructions, and affects all subsequent instructions.
