@@ -72,7 +72,15 @@ Docker Host
 Docker Objects
 Docker’s Registry 
 
-# Ho
+# Role Of Docker in DevOps
+
+DevOps is a portmanteau of the terms development and operations, meant to represent a collaborative or shared approach 
+to the tasks performed by a company's application development and IT operations teams. The term DevOps is used in 
+several ways. In its broadest meaning, DevOps is an operational philosophy that promotes better communication and 
+collaboration between these teams -- and others -- in an organization. In its most narrow interpretation, DevOps 
+describes the adoption of programmable software development, automation and infrastructure deployment and maintenance. 
+The term also labels a culture that oversees the entire software delivery chain and shared services and promotes the 
+adoption of new development tools and best practices.
 
 
 ![Docker Components](https://github.com/kakuffo/Dockerfiles/blob/master/vid/docker01.png?raw=true)
