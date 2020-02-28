@@ -128,6 +128,32 @@ yet complete. Do not use unless you are aware of what the current state is. See 
 
 ### config
 
+#### current-context
+
+#### delete-cluster
+
+#### delete-context
+
+#### get-clusters
+
+#### get-contexts
+
+#### rename-context
+
+#### set
+
+#### set-cluster
+
+#### set-context
+
+#### set-credentials
+
+#### unset
+
+#### use-context
+
+### view
+
 ### explain
 
 ### kustomize
