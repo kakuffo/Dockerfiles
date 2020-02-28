@@ -164,5 +164,18 @@ yet complete. Do not use unless you are aware of what the current state is. See 
 
 ### version
 
-DEPRECATED COMMANDS
-rolling-update
+# Workflow
+
+Gubernator Dashboard - View incoming and outgoing Pull Requests that require your attention.
+Prow - Kubernetes CI/CD System.
+Tide - Prow plugin that manages merges and tests. Tide Dashboard
+Bot commands - Commands used to interact with Kubernetes Bots (examples: /cc, /lgtm, and /retest)
+GitHub labels - List of labels used throughout the Kubernetes Project
+Kubernetes Code Search, maintained by @dims
+
+# Tests
+
+Prow - Kubernetes CI/CD System.
+Test Grid - View historical tests and their associated information.
+Triage Dashboard - Aggregates similar failures together for better troubleshooting.
+Velodrome - Dashboard to track job and test health.
