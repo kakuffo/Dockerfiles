@@ -64,8 +64,9 @@ list these components, and given the official documentation to each.:
 ![Docker Architecture](https://vmarena.com/wp-content/uploads/2018/08/DOCK02.png)
 
 # What is Docker a Image
-A Docker image is an inactive (stateless), and a collection of files representitive of Host OS, Infrastructure, 
-and docker.  A Docker image translates into a Docker Container once it has been activated by the Run command, and 
+A Docker image is an inactive (stateless), and a collection of files of Host OS, Infrastructure, 
+and docker.  A Docker image instantiate into a Docker Container once it has been activated by the Run command, and
+existing usually during the runtime of a docker image, with the default Docker image object. 
 
 Docker’s Client
 Docker Host
