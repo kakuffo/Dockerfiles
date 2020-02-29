@@ -17,9 +17,9 @@ list these components, and given the official documentation to each.:
                 * Namespace - [Docker Namespaces documentation](https://docs.docker.com/engine/docker-overview/)
                 * Cgroups - [Docker Cgroups documentation](https://docs.docker.com/engine/docker-overview/)
                 * Filesystem - [Docker Filesystem documentation](https://docs.docker.com/storage/) 
-                * Linux Security
-            * Snapshot
-                * Storage Driver
+                * Linux Security - [Linux Security documentation](https://docs.docker.com/engine/security/security/)
+            * Snapshot - [BTRFS Snapshot documentation](https://docs.docker.com/storage/storagedriver/btrfs-driver/) 
+                * Storage Driver - [Docker Storage Driver documentation](https://docs.docker.com/storage/storagedriver/select-storage-driver/) 
         * Docker Network
             * Sandbox
             * Endpoint(API)
@@ -34,15 +34,15 @@ list these components, and given the official documentation to each.:
  
 |Docker Component       |What it does           | Documentation Link    | 
 |:-----------------------|:---------------------|:----------------------|
-| Docker Engine         | Docker Engine is an open source containerization technology for building and containerizing your applications| [Docker Engine Documentation](https://docs.docker.com/install/linux/docker-ce/ubuntu/)                      |                       |
-| Docker Server (daemon)         | The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.| [Docker daemon documentation](https://docs.docker.com/engine/reference/commandline/dockerd/)                      |
-| Docker Storage|The file system in docker is managed by the container runtime and it uses a storage driver to write to the containers writable layer. However to persist data outside the container, Docker Enterprise Platform; volumes, bind mounts and tmpfs mounts. |[Docker Storage](https://success.docker.com/article/an-introduction-to-storage-solutions-for-docker-enterprise)|                      |
-| Docker Container |Docker Containers are an abstraction at the app layer that packages code and dependencies together. | [Docker Container](https://www.docker.com/resources/what-container)|
-| runC|runC, a lightweight universal container runtime, is a command-line tool for spawning and running containers according to the Open Container Initiative (OCI) specification.  This page gathers resources about managing containers in runC.| [Docker RunC](https://docs.docker.com/engine/reference/run/)  |
-| Namespace|Docker uses a technology called namespaces to provide the isolated workspace called the container. When you run a container, Docker creates a set of namespaces for that container.|[Docker Namespaces](https://docs.docker.com/engine/docker-overview/) |
-| Cgroups|A cgroup limits an application to a specific set of resources. Control groups allow Docker Engine to share available hardware resources to containers and optionally enforce limits and constraints.|[Docker Cgroups](https://docs.docker.com/engine/docker-overview/)|
+| Docker Engine         |: Docker Engine is an open source containerization technology for building and containerizing your applications| [Docker Engine Documentation](https://docs.docker.com/install/linux/docker-ce/ubuntu/)                      |                       |
+| Docker Server (daemon)|: The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.| [Docker daemon documentation](https://docs.docker.com/engine/reference/commandline/dockerd/)                      |
+| Docker Storage|: The file system in docker is managed by the container runtime and it uses a storage driver to write to the containers writable layer. However to persist data outside the container, Docker Enterprise Platform; volumes, bind mounts and tmpfs mounts. |[Docker Storage](https://success.docker.com/article/an-introduction-to-storage-solutions-for-docker-enterprise)|                      |
+| Docker Container |: Docker Containers are an abstraction at the app layer that packages code and dependencies together. | [Docker Container](https://www.docker.com/resources/what-container)|
+| runC|: runC, a lightweight universal container runtime, is a command-line tool for spawning and running containers according to the Open Container Initiative (OCI) specification.  This page gathers resources about managing containers in runC.| [Docker RunC](https://docs.docker.com/engine/reference/run/)  |
+| Namespace|: Docker uses a technology called namespaces to provide the isolated workspace called the container. When you run a container, Docker creates a set of namespaces for that container.|[Docker Namespaces](https://docs.docker.com/engine/docker-overview/) |
+| Cgroups|: A cgroup limits an application to a specific set of resources. Control groups allow Docker Engine to share available hardware resources to containers and optionally enforce limits and constraints.|[Docker Cgroups](https://docs.docker.com/engine/docker-overview/)|
 | Filesystem|Volumes are stored in a part of the host filesystem which is managed by Docker (/var/lib/docker/volumes/ on Linux). Non-Docker processes should not modify this part of the filesystem. Volumes are the best way to persist data in Docker.|[Docker Filesystem](https://docs.docker.com/storage/)|
-| Linux Security|Docker containers are very similar to LXC containers, and they have similar security features. When you start a container with docker run, behind the scenes Docker creates a set of namespaces and control groups for the container.|[Linux Security](https://docs.docker.com/engine/security/security/)
+| Linux Security|Docker containers are very similar to LXC containers, and they have similar security features. When you start a container with docker run, behind the scenes Docker creates a set of namespaces and control groups for the container.|[Linux Security](https://docs.docker.com/engine/security/security/)|
 | Snapshot|Docker’s btrfs storage driver leverages many Btrfs features for image and container management. Among these features are block-level operations, thin provisioning, copy-on-write snapshots, and ease of administration. You can easily combine multiple physical block devices into a single Btrfs filesystem.|[BTRFS Snapshot](https://docs.docker.com/storage/storagedriver/btrfs-driver/)|
 | Storage Driver|Docker supports several different storage drivers, using a pluggable architecture. The storage driver controls how images and containers are stored and managed on your Docker host.|[Docker Storage Driver](https://docs.docker.com/storage/storagedriver/select-storage-driver/)|
 | Docker Network|The client and daemon API must both be at least 1.21 to use this command. Use the docker version command on the client to check your client and daemon API versions.|[Docker Network](https://docs.docker.com/engine/reference/commandline/network_create/)|
