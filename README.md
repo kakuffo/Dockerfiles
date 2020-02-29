@@ -10,8 +10,8 @@ as a client-server application with several components, which together forms the
 list these components, and given the official documentation to each.:
 
 * Docker Engine
-    * Docker Server 
-        * Docker Storage
+    * Docker Server - [Docker daemon documentation](https://docs.docker.com/engine/reference/commandline/dockerd/) 
+        * Docker Storage - [Docker Storage](https://success.docker.com/article/an-introduction-to-storage-solutions-for-docker-enterprise)
         * Docker Container
             * runC
                 * Namespace
@@ -35,7 +35,7 @@ list these components, and given the official documentation to each.:
 |Docker Component       |What it does           | Documentation Link    | 
 |:-----------------------|:---------------------|:----------------------|
 | Docker Engine         | Docker Engine is an open source containerization technology for building and containerizing your applications| [Docker Engine Documentation](https://docs.docker.com/install/linux/docker-ce/ubuntu/)                      |                       |
-| Docker Server (daemon)         | The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.| [Docker daemon documentation]()                      |
+| Docker Server (daemon)         | The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.| [Docker daemon documentation](https://docs.docker.com/engine/reference/commandline/dockerd/)                      |
 | Docker Storage|The file system in docker is managed by the container runtime and it uses a storage driver to write to the containers writable layer. However to persist data outside the container, Docker Enterprise Platform; volumes, bind mounts and tmpfs mounts. |[Docker Storage](https://success.docker.com/article/an-introduction-to-storage-solutions-for-docker-enterprise)|                      |
 | Docker Container |Docker Containers are an abstraction at the app layer that packages code and dependencies together. | [Docker Container](https://www.docker.com/resources/what-container)|
 | runC|runC, a lightweight universal container runtime, is a command-line tool for spawning and running containers according to the Open Container Initiative (OCI) specification.  This page gathers resources about managing containers in runC.| [Docker RunC](https://docs.docker.com/engine/reference/run/)  |
@@ -56,4 +56,6 @@ list these components, and given the official documentation to each.:
 | IPAM Drive|Docker DRIVER accepts bridge or overlay which are the built-in network drivers.|[Docker DRIVER](https://docs.docker.com/engine/reference/commandline/network_create/)| 
 | Docker REST API|Docker provides an API for interacting with the Docker daemon (called the Docker Engine API), as well as SDKs for Go and Python.|[Docker Engine API](https://docs.docker.com/engine/api/)|
 | Docker CLI|Depending on your Docker system configuration, you may be required to preface each docker command with sudo. |[Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/)|
-        
+
+
+ 
