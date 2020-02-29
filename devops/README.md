@@ -26,4 +26,4 @@ Activity, in project management, is defined as the amount of
 work performed that converts input to appropriate outputs.
 
 
-![Docker Components](https://github.com/kakuffo/Dockerfiles/blob/master/vid/Scree09.png?raw=true)
+![Docker Components o](https://github.com/kakuffo/Dockerfiles/blob/master/vid/Scree09.png?raw=true)
