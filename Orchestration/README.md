@@ -21,6 +21,10 @@ Check the newly created POD in Kubernetes DashBoard
 
 ### create
 
+#### Create a resource from a file or from stdin.
+```Shell
+$ create -f FILENAME
+```
 ### get
 
 ### run
