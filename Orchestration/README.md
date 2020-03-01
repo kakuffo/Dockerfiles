@@ -17,26 +17,20 @@ Check the newly created POD in Kubernetes DashBoard
 
 ## Orchestration Tools
  
-## create Create a resource from a file or from stdin.
-
+## create
 ### Create a resource from a file or from stdin.
-
 ```Shell
 $ create -f FILENAME
 ```
 Create a pod using the data in pod.json.
-
 ```Shell
 kubectl create -f ./pod.json
 ```
 Create a pod based on the JSON passed into stdin.
-
 ```Shell
 cat pod.json | kubectl create -f -
 ```
-
 Edit the data in docker-registry.yaml in JSON then create the resource using the edited data.
-
 ```Shell
 cat pod.json | kubectl create -f -
 ```
