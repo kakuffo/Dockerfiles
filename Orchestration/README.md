@@ -17,7 +17,7 @@ Check the newly created POD in Kubernetes DashBoard
 
 ## Orchestration Tools
  
-## create
+## create Create a resource from a file or from stdin.
 
 ### Create a resource from a file or from stdin.
 
