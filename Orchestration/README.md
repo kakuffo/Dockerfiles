@@ -53,6 +53,38 @@ kubectl create -f docker-registry.yaml --edit -o json
 |validate|		true	If true, use a schema to validate the input before sending it
 |windows-line-endings|		false	Only relevant if --edit=true. Defaults to the line ending native to your platform.
 
+#### Create a ClusterRole
+Usage
+```Shell
+$ clusterrole NAME --verb=verb --resource=resource.group [--resource-name=resourcename] [--dry-run]
+```
+#### Create a ClusterRole named "pod-reader" that allows user to perform "get", "watch" and "list" on pods
+```Shell
+kubectl create clusterrole pod-reader --verb=get,list,watch --resource=pods
+```
+#### Create a ClusterRole named "pod-reader" with ResourceName specified
+```Shell
+kubectl create clusterrole pod-reader --verb=get --resource=pods --resource-name=readablepod --resource-name=anotherpod
+```
+#### Create a ClusterRole named "foo" with API Group specified
+```Shell
+kubectl create clusterrole foo --verb=get,list,watch --resource=rs.extensions
+```
+#### Create a ClusterRole named "foo" with SubResource specified
+```Shell
+kubectl create clusterrole foo --verb=get,list,watch --resource=pods,pods/status
+```
+#### Create a ClusterRole name "foo" with NonResourceURL specified
+```Shell
+kubectl create clusterrole "foo" --verb=get --non-resource-url=/logs/*
+```
+#### Create a ClusterRole name "monitoring" with AggregationRule specified
+```Shell
+kubectl create clusterrole monitoring --aggregation-rule="rbac.example.com/aggregate-to-monitoring=true"
+```
+
+
+
 ### get
 
 ### run
