@@ -38,7 +38,7 @@ kubectl create -f docker-registry.yaml --edit -o json
 
 |:Name	|:Shorthand|:Default|:	Usage    |
 |:------|:---------|:-------|:-----------|
-allow-missing-template-keys		true	If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+|allow-missing-template-keys|		|true|	If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
 dry-run		false	If true, only print the object that would be sent, without sending it.
 edit		false	Edit the API resource before creating
 filename	f	[]	Filename, directory, or URL to files to use to create the resource
