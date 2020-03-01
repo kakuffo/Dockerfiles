@@ -36,22 +36,23 @@ cat pod.json | kubectl create -f -
 ```
 kubectl create -f docker-registry.yaml --edit -o json
 
-|:Name	|:Shorthand|:Default|:	Usage    |
+|Name	|Shorthand|Default  |	Usage    |
 |:------|:---------|:-------|:-----------|
 |allow-missing-template-keys|		|true|	If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
-dry-run		false	If true, only print the object that would be sent, without sending it.
-edit		false	Edit the API resource before creating
-filename	f	[]	Filename, directory, or URL to files to use to create the resource
-kustomize	k		Process the kustomization directory. This flag can't be used together with -f or -R.
-output	o		Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
-raw			Raw URI to POST to the server. Uses the transport specified by the kubeconfig file.
-record		false	Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
-recursive	R	false	Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
-save-config		false	If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
-selector	l		Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
-template			Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
-validate		true	If true, use a schema to validate the input before sending it
-windows-line-endings		false	Only relevant if --edit=true. Defaults to the line ending native to your platform.
+|dry-run|		false	If true, only print the object that would be sent, without sending it.
+|edit|		false	Edit the API resource before creating
+|filename|	f	[]	Filename, directory, or URL to files to use to create the resource
+|kustomize|	k		Process the kustomization directory. This flag can't be used together with -f or -R.
+|output|	o		Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+|raw|			Raw URI to POST to the server. Uses the transport specified by the kubeconfig file.
+|record|		false	Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+|recursive|	R	false	Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+|save-config|		false	If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+|selector|	l		Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+|template|			Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+|validate|		true	If true, use a schema to validate the input before sending it
+|windows-line-endings|		false	Only relevant if --edit=true. Defaults to the line ending native to your platform.
+
 ### get
 
 ### run
