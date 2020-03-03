@@ -57,5 +57,28 @@ list these components, and given the official documentation to each.:
 | Docker REST API|Docker provides an API for interacting with the Docker daemon (called the Docker Engine API), as well as SDKs for Go and Python.|
 | Docker CLI|Depending on your Docker system configuration, you may be required to preface each docker command with sudo. |
 
+# Kubernetes kubectl integration with Docker
+
+You can use the Kubernetes command line tool kubectl to interact with the API Server. Using kubectl is straightforward 
+if you are familiar with the Docker command line tool. However, there are a few differences between the docker commands 
+and the kubectl commands. The following sections show a docker sub-command and describe the equivalent kubectl command.
+
+## docker run
+
+## docker ps
+
+## docker attach
+
+## docker exec
+
+## docker logs
+
+## docker stop and docker rm
+
+## docker login
+
+## docker version
+
+##docker info
 
  
