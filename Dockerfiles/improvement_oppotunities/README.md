@@ -16,6 +16,8 @@ such as the Source lines of code (SLOC) for a dockerfile.
 $ brew install tokei
 ```
 
+## Dockerfile optimisation
+
 ```Shell
 CMD apt-get update
 CMD apt-get upgrade
