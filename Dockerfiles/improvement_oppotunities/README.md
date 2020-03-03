@@ -30,6 +30,8 @@ CMD apt-get update && apt-get upgrade -y && apt-get install apache2 -y
 
 It's also possible to split long commands across several lines by including \\ at the end of the line; write the next part of the command on the following line:
 
+```Shell
      CMD apt-get update \\
           && apt-get upgrade -y \\
           && apt-get install apache2 -y
+````
