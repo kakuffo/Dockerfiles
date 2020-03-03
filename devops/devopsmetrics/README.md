@@ -11,3 +11,8 @@
 Lead time. A lead time is the latency between the initiation and completion of a process. For example, the 
 lead time between the placement of an order and delivery of new cars by a given manufacturer might be between 
 2 weeks and 6 months, depending on various particularities.
+
+## Mean time to recovery
+Mean time to recovery (MTTR) is the average time that a device will take to recover from any failure. Examples of 
+such devices range from self-resetting fuses (where the MTTR would be very short, probably seconds), up to whole 
+systems which have to be repaired or replaced.
