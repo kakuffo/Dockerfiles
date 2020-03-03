@@ -12,21 +12,21 @@ such as the Source lines of code (SLOC) for a dockerfile.
 
 ### MacOS (Homebrew)
 
-````Shell
+```Shell
 $ brew install tokei
-````
+```
 
-````Shell
+```Shell
 CMD apt-get update
 CMD apt-get upgrade
 CMD apt-get install apache2
-````
+```
 
 To create them in one layer, combine the commands as follows:
 
-````Shell
+```Shell
 CMD apt-get update && apt-get upgrade -y && apt-get install apache2 -y
-````
+```
 
 It's also possible to split long commands across several lines by including \\ at the end of the line; write the next part of the command on the following line:
 
