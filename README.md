@@ -63,22 +63,22 @@ You can use the Kubernetes command line tool kubectl to interact with the API Se
 if you are familiar with the Docker command line tool. However, there are a few differences between the docker commands 
 and the kubectl commands. The following sections show a docker sub-command and describe the equivalent kubectl command.
 
-## docker run
+## Docker run
 
-## docker ps
+## Docker ps
 
-## docker attach
+## Docker attach
 
-## docker exec
+## Docker exec
 
-## docker logs
+## Docker logs
 
-## docker stop and docker rm
+## Docker stop and docker rm
 
-## docker login
+## Docker login
 
-## docker version
+## Docker version
 
-##docker info
+## Docker info
 
  
