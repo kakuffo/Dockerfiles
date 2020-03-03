@@ -18,6 +18,19 @@ $ brew install tokei
 
 ## Dockerfile optimisation
 
+a command that changes the file system, it adds a new layer.
+Expand  built-in labels to include important information related
+Use key-value pairs for entry input. For example, to input a description, enter:
+
+
+
+```JSON
+     "Labels":  {
+     "maintainer": "kakuffo@apertusdatum"
+     "description": "This text illustrates that label-values can span"
+      }
+```
+      
 ```Shell
 CMD apt-get update
 CMD apt-get upgrade
