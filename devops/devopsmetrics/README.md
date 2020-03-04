@@ -27,3 +27,5 @@ smaller segments with mini-deployments.
 Mean time to recovery (MTTR) is the average time that a device will take to recover from any failure. Examples of 
 such devices range from self-resetting fuses (where the MTTR would be very short, probably seconds), up to whole 
 systems which have to be repaired or replaced.
+
+![Mean time to recovery](https://github.com/kakuffo/Dockerfiles/blob/master/vid/mtbf.png)
