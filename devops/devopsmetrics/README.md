@@ -7,10 +7,14 @@
 * User volume: Indicates how useful your users find your applications
 
 ## Lead time to develop
+“Lead time” is a term borrowed from the manufacturing method known as Lean or Toyota Production System, where it is 
+defined as the time elapsed between a customer placing an order and receiving the product ordered.  For DevOps, a methodology
+that encompass the practice of continuous integration, continuous testing, and continuous deliver, I take the lead time
+to development as the lead time the 'lead time to production'.  Meaning, the time it take for a development artifact 
+(code + configuration) to be deployed on production from the time a unit test build for that deployment is started in 
+a build server such as Jenkins.
 
-Lead time. A lead time is the latency between the initiation and completion of a process. For example, the 
-lead time between the placement of an order and delivery of new cars by a given manufacturer might be between 
-2 weeks and 6 months, depending on various particularities.
+
 
 ## Percentage of failed deployments
 
