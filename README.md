@@ -84,7 +84,23 @@ docker ps -a
 ```
 ## Docker attach
 
+To attach a process that is already running in a container, see kubectl attach.
+docker:
+```bash
+
+docker ps
+
+```
+
 ## Docker exec
+To execute a command in a container, see kubectl exec.
+docker:
+
+```bash
+
+docker exec 55c103fa1296 cat /etc/hostname
+
+```
 
 ## Docker logs
 
