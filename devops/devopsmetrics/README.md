@@ -14,7 +14,7 @@ to development as the lead time the 'lead time to production'.  Meaning, the tim
 (code + configuration) to be deployed on production from the time a unit test build for that deployment is started in 
 a build server such as Jenkins.
 
-[Lead Time to Deployment] (https://github.com/kakuffo/Dockerfiles/blob/master/vid/lead-time-diagram.jpg "Lead Time to Deployment")
+[Lead Time to Deployment] (https://github.com/kakuffo/Dockerfiles/blob/master/vid/lead-time-diagram.jpg)
 
 ## Percentage of failed deployments
 
