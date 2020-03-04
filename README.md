@@ -64,9 +64,24 @@ if you are familiar with the Docker command line tool. However, there are a few 
 and the kubectl commands. The following sections show a docker sub-command and describe the equivalent kubectl command.
 
 ## Docker run
+To run an nginx Deployment and expose the Deployment, see kubectl run.
+docker:
 
+```bash
+docker run -d --restart=always -e DOMAIN=cluster --name nginx-app -p 80:80 nginx
+```
 ## Docker ps
+To list what is currently running, see kubectl get.
+docker:
 
+```bash
+docker ps -a
+```
+
+
+```bash
+
+```
 ## Docker attach
 
 ## Docker exec
