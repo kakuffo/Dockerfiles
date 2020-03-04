@@ -28,4 +28,4 @@ Mean time to recovery (MTTR) is the average time that a device will take to reco
 such devices range from self-resetting fuses (where the MTTR would be very short, probably seconds), up to whole 
 systems which have to be repaired or replaced.
 
-![Mean time to recovery](https://github.com/kakuffo/Dockerfiles/blob/master/vid/MTTR.png)
+![Mean time to recovery](https://github.com/kakuffo/Dockerfiles/blob/master/vid/MTTE.png)
