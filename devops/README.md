@@ -1,19 +1,19 @@
 
 Commands
 
-Run
-Environment Variables
-Images
-CMD vs ENTRYPOINT
-Networking
-Storage
-Compose
-Registry
-Engine
-Docker on Windows
-Docker on Mac
-Container Orchestration
-Docker Swarm
+Run<br>
+Environment Variables<br>
+Images<br>
+CMD vs ENTRYPOINT<br>
+Networking<br>
+Storage<br>
+Compose<br>
+Registry<br>
+Engine<br>
+Docker on Windows<br>
+Docker on Mac<br>
+Container Orchestration<br>
+Docker Swarm<br>
 
 # Role Of Docker in DevOps
 
