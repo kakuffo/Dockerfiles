@@ -1,23 +1,7 @@
 
 - [Example 1 Heading](###Example-1-Heading)
 
-Commands
 
-Run
-Environment Variables
-Images
-CMD vs ENTRYPOINT
-Networking
-Storage
-Compose
-Registry
-Engine
-Docker on Windows
-Docker on Mac
-Container Orchestration
-Docker Swarm
-
-⌨️ (2:03:21) Kubernetes
 # DevOps Matrics
 
 * Lead time to develop an application: Helps you understand how quickly you develop applications
