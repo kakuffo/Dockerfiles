@@ -1,4 +1,20 @@
 
+Commands
+
+Run
+Environment Variables
+Images
+CMD vs ENTRYPOINT
+Networking
+Storage
+Compose
+Registry
+Engine
+Docker on Windows
+Docker on Mac
+Container Orchestration
+Docker Swarm
+
 # Role Of Docker in DevOps
 
 DevOps, at first is a process, and not an event DevOps is a portmanteau of the terms development and operations, representing, and collaborative the shared approach
